@@ -10,8 +10,10 @@ android {
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        aaptOptions.cruncherEnabled = false
-        aaptOptions.useNewCruncher = false
+//        aaptOptions.cruncherEnabled = false
+//        aaptOptions.useNewCruncher = false
+        aaptOptions.setProperty("cruncherEnabled",false)
+        aaptOptions.setProperty("useNewCruncher",false)
     }
     buildTypes {
         release {
